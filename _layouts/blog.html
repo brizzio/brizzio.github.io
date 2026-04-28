@@ -35,7 +35,20 @@ layout: default
   <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
     {% for post in site.posts %}
       <article class="rounded-3xl border border-white/10 bg-white/5 p-6">
-        <p class="text-xs uppercase tracking-[0.24em] text-white/40">{{ post.date | date: "%d/%m/%Y" }}</p>
+        {% if post.cover_image %}
+          <a class="mb-5 block overflow-hidden rounded-2xl border border-white/10" href="{{ post.url | relative_url }}">
+            <img class="h-44 w-full object-cover" src="{{ post.cover_image | relative_url }}" alt="{{ post.cover_alt | default: post.title }}">
+          </a>
+        {% endif %}
+        <div class="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.24em] text-white/40">
+          <span>{{ post.date | date: "%d/%m/%Y" }}</span>
+          {% if post.reading_time %}
+            <span class="rounded-full border border-white/10 px-3 py-1 text-white/60">{{ post.reading_time }}</span>
+          {% endif %}
+          {% if post.featured %}
+            <span class="rounded-full border border-sky-300/30 bg-sky-300/10 px-3 py-1 text-sky-200">Destaque</span>
+          {% endif %}
+        </div>
         <h2 class="mt-3 text-2xl font-semibold text-white">
           <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         </h2>
@@ -55,4 +68,3 @@ layout: default
     {% endfor %}
   </div>
 </section>
-
