@@ -1,32 +1,16 @@
 ---
-layout: page
+layout: curriculum
 title: Curriculum
 permalink: /curriculum/
 description: Resumo profissional, competencias, experiencias e projetos.
 ---
 
-## Resumo
+Esta pagina segue a mesma logica do blog.
 
-Desenvolvedor com experiencia em sistemas web, automacoes, integracoes e produtos digitais.
+- A estrutura principal vem de [`_data/curriculum.yml`](/C:/Users/opera/Desktop/brizzio.github.io/_data/curriculum.yml:1).
+- Este arquivo `curriculum.md` continua livre para texto complementar em Markdown.
+- Os blocos visuais de experiencia, competencias e projetos podem ser editados no YAML sem mexer no layout.
 
-## Competencias
-
-- JavaScript, Node.js e front-end web.
-- APIs, automacoes e integracoes entre sistemas.
-- Bancos de dados, ETL e manipulacao de dados.
-- Deploy, GitHub Pages e fluxos com Git.
-
-## Experiencia
-
-Adicione aqui suas principais experiencias profissionais, projetos e responsabilidades.
-
-## Projetos
-
-- Projeto 1: breve descricao e link.
-- Projeto 2: breve descricao e link.
-- Projeto 3: breve descricao e link.
-
-## Contato
+## Contato e observacoes
 
 - GitHub: [github.com/brizzio](https://github.com/brizzio)
-

@@ -1,0 +1,55 @@
+hero:
+  eyebrow: Perfil profissional
+  title: Experiencia em software, automacao, integracoes e operacao digital.
+  body: Esta pagina combina dados estruturados em YAML para organizacao do curriculum com uma camada de texto livre em Markdown para observacoes e contexto adicional.
+
+highlights:
+  - label: Foco
+    value: Sistemas web e ferramentas operacionais
+  - label: Especialidade
+    value: Integracoes, automacoes e dados
+  - label: Fluxo
+    value: Produto, implementacao e deploy
+
+skills:
+  - category: Desenvolvimento
+    items:
+      - JavaScript
+      - Node.js
+      - Front-end web
+      - APIs
+  - category: Dados e automacao
+    items:
+      - ETL
+      - Scraping
+      - Integracoes
+      - Processos recorrentes
+  - category: Operacao e entrega
+    items:
+      - Git e GitHub
+      - GitHub Pages
+      - Estruturacao de projetos
+      - Documentacao tecnica
+
+experience:
+  - role: Desenvolvimento de sistemas web
+    period: Projetos variados
+    summary: Implementacao de interfaces, paineis internos, fluxos operacionais e ferramentas voltadas ao uso diario.
+  - role: Integracoes entre sistemas
+    period: APIs, ERPs e servicos
+    summary: Conexao entre plataformas, servicos externos, bancos de dados e fontes operacionais.
+  - role: Automacoes de dados
+    period: ETL e operacao
+    summary: Estruturacao de pipelines, consolidacao de dados e reducao de trabalho manual em processos repetitivos.
+
+projects:
+  - title: Site pessoal em Jekyll
+    description: Estrutura modular com dados em YAML, layouts reutilizaveis e publicacao automatizada no GitHub Pages.
+    url: https://brizzio.github.io
+  - title: Perfil GitHub
+    description: README de perfil integrado ao site principal para apresentar contexto e links centrais.
+    url: https://github.com/brizzio
+  - title: Base para artigos tecnicos
+    description: Blog com posts em Markdown usando front matter YAML para metadados e organizacao.
+    url: /blog/
+
