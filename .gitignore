@@ -2,6 +2,8 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+.site-check/
 .bundle/
 vendor/
 jekyll-server.log
+node_modules/

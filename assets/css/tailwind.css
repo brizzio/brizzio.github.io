@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-white;
+    font-family: "Manrope", sans-serif;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Newsreader", serif;
+    letter-spacing: 0;
+  }
+}
+
+@layer components {
+  .bg-page-glow {
+    background:
+      radial-gradient(circle at top right, rgba(61, 180, 242, 0.16), transparent 30%),
+      radial-gradient(circle at 15% 20%, rgba(245, 117, 94, 0.14), transparent 24%),
+      linear-gradient(180deg, #0a0f1a 0%, #09111c 52%, #0b1117 100%);
+  }
+
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 36px 36px;
+    mask-image: linear-gradient(180deg, rgba(0,0,0,0.85), transparent 85%);
+  }
+
+  .prose-shell {
+    @apply text-base leading-8 text-white/80;
+  }
+
+  .prose-shell h2 {
+    @apply mt-10 font-display text-3xl text-white;
+  }
+
+  .prose-shell h3 {
+    @apply mt-8 text-2xl font-semibold text-white;
+  }
+
+  .prose-shell p,
+  .prose-shell ul,
+  .prose-shell ol {
+    @apply mt-4;
+  }
+
+  .prose-shell ul {
+    @apply list-disc pl-5;
+  }
+
+  .prose-shell li {
+    @apply mt-2;
+  }
+
+  .prose-shell a {
+    @apply text-sand underline decoration-white/20 underline-offset-4;
+  }
+
+  .prose-shell code {
+    @apply rounded bg-white/10 px-1.5 py-0.5 text-sm text-sky-200;
+  }
+
+  .prose-shell pre {
+    @apply mt-6 overflow-x-auto rounded-2xl border border-white/10 bg-ink-deep p-4 text-sm;
+  }
+}

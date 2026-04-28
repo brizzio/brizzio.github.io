@@ -1,0 +1,37 @@
+{% assign hero = site.data.home.hero %}
+{% assign stats = site.data.home.stats %}
+
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 bg-grid opacity-40"></div>
+  <div class="mx-auto grid max-w-6xl gap-12 px-6 py-16 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:py-24">
+    <div class="relative z-10">
+      <p class="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-sky-300">{{ hero.eyebrow }}</p>
+      <h1 class="max-w-3xl font-display text-5xl leading-tight text-white md:text-6xl">{{ hero.title }}</h1>
+      <p class="mt-6 max-w-2xl text-lg leading-8 text-white/70">{{ hero.body }}</p>
+      <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+        <a class="inline-flex items-center justify-center rounded-full bg-sand px-6 py-3 text-sm font-semibold text-ink transition hover:bg-white" href="{{ hero.primary_url | relative_url }}">
+          {{ hero.primary_label }}
+        </a>
+        <a class="inline-flex items-center justify-center rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/40 hover:bg-white/5" href="{{ hero.secondary_url | relative_url }}">
+          {{ hero.secondary_label }}
+        </a>
+      </div>
+      <div class="mt-12 grid gap-4 sm:grid-cols-3">
+        {% for stat in stats %}
+          <div class="rounded-3xl border border-white/10 bg-white/5 p-5">
+            <div class="text-sm font-semibold uppercase tracking-[0.22em] text-sky-300">{{ stat.value }}</div>
+            <p class="mt-2 text-sm leading-6 text-white/70">{{ stat.label }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="relative z-10">
+      <div class="absolute -left-8 top-8 h-36 w-36 rounded-full bg-coral/25 blur-3xl"></div>
+      <div class="absolute -right-8 bottom-6 h-44 w-44 rounded-full bg-sky-500/25 blur-3xl"></div>
+      <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/5 shadow-2xl shadow-black/30">
+        <img class="h-[420px] w-full object-cover object-center" src="{{ hero.image | relative_url }}" alt="{{ hero.image_alt }}">
+        <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent"></div>
+      </div>
+    </div>
+  </div>
+</section>

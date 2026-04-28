@@ -1,0 +1,45 @@
+hero:
+  eyebrow: Desenvolvedor e construtor de produtos digitais
+  title: Estruturo software, dados e automacoes para transformar processos em produtos.
+  body: Este site centraliza minha apresentacao, meu curriculum e artigos sobre tecnologia, integracoes, experimentos e projetos em andamento.
+  primary_label: Ver curriculum
+  primary_url: /curriculum/
+  secondary_label: Ler artigos
+  secondary_url: /blog/
+  image: /assets/images/hero.jpg
+  image_alt: Cabecalho com visual grafico usado na apresentacao do perfil
+
+stats:
+  - value: APIs
+    label: Integracoes entre sistemas e servicos
+  - value: Dados
+    label: ETL, scraping, estrutura e automacao
+  - value: Produto
+    label: Ferramentas focadas em uso real
+
+sections:
+  - title: O que eu faco
+    body: Trabalho na intersecao entre engenharia, automacao e entrega de produto. Gosto de montar estruturas simples para problemas que costumam nascer confusos.
+    cards:
+      - title: Sistemas web
+        text: Interfaces, paineis internos, fluxos operacionais e ferramentas de apoio.
+      - title: Integracoes
+        text: Conexao entre APIs, ERPs, CRMs, planilhas, bancos e servicos externos.
+      - title: Automacoes
+        text: Pipelines de dados, tarefas recorrentes e operacoes que precisam rodar com consistencia.
+  - title: Como eu penso
+    body: Prefiro sistemas diretos, observaveis e faceis de manter. A estrutura do site segue a mesma ideia. Dados em YAML, templates reutilizaveis e camada visual separada.
+    cards:
+      - title: Estrutura clara
+        text: Layouts, includes e dados organizados para edicao rapida.
+      - title: Evolucao gradual
+        text: A home pode crescer em secoes sem virar um arquivo monolitico.
+      - title: Publicacao previsivel
+        text: Build local e deploy automatizado no GitHub Pages.
+
+cta:
+  title: Quer acompanhar o que estou construindo?
+  body: O blog sera o lugar para publicar notas tecnicas, estudos, projetos e experimentos.
+  label: Abrir blog
+  url: /blog/
+

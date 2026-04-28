@@ -1,0 +1,22 @@
+brand:
+  name: Fabrizio Salvade
+  tagline: Software, automacao e produtos digitais
+
+navigation:
+  - label: Inicio
+    url: /
+  - label: Curriculum
+    url: /curriculum/
+  - label: Blog
+    url: /blog/
+
+social:
+  - label: GitHub
+    url: https://github.com/brizzio
+  - label: Site
+    url: https://brizzio.github.io
+
+footer:
+  title: Fabrizio Salvade
+  text: Construindo sistemas, integracoes e ferramentas com foco em utilidade real.
+

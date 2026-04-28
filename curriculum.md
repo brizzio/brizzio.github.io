@@ -2,9 +2,8 @@
 layout: page
 title: Curriculum
 permalink: /curriculum/
+description: Resumo profissional, competencias, experiencias e projetos.
 ---
-
-# Curriculum
 
 ## Resumo
 

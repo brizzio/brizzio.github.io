@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<section class="mx-auto max-w-4xl px-6 py-16 md:py-20">
+  <div class="rounded-[2rem] border border-white/10 bg-white/5 p-8 md:p-12">
+    <h1 class="font-display text-4xl text-white md:text-5xl">{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="mt-4 max-w-2xl text-base leading-8 text-white/70">{{ page.description }}</p>
+    {% endif %}
+    <div class="prose-shell mt-8">
+      {{ content }}
+    </div>
+  </div>
+</section>
+

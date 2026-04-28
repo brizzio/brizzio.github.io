@@ -1,23 +1,24 @@
 title: Fabrizio Salvade
-description: Apresentacao, curriculo e artigos.
+description: Apresentacao, curriculum e artigos.
 url: "https://brizzio.github.io"
 baseurl: ""
-theme: minima
+lang: pt-BR
+locale: pt_BR
 
 author:
   name: Fabrizio Salvade
-  email:
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-header_pages:
-  - curriculum.md
-  - blog.md
+collections:
+  posts:
+    output: true
 
-minima:
-  social_links:
-    - platform: github
-      user_url: "https://github.com/brizzio"
-
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post

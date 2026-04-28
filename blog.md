@@ -2,9 +2,8 @@
 layout: page
 title: Blog
 permalink: /blog/
+description: Artigos, notas tecnicas e registros de projetos.
 ---
-
-# Blog
 
 Artigos, notas tecnicas e registros de projetos.
 
