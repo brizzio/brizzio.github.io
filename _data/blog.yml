@@ -1,0 +1,13 @@
+hero:
+  eyebrow: Publicacoes
+  title: Blog sobre tecnologia, integracoes e construcao de produto.
+  body: A pagina do blog usa dados estruturados para a apresentacao geral, enquanto cada artigo continua sendo um arquivo Markdown com front matter YAML no topo.
+
+highlights:
+  - title: Front matter
+    text: Cada post define metadados como titulo, data, tags, destaque e resumo.
+  - title: Markdown
+    text: O corpo do artigo continua simples de escrever e revisar em texto.
+  - title: Estrutura reutilizavel
+    text: A pagina lista artigos e pode crescer com categorias, destaque e filtros depois.
+
